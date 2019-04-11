@@ -1,0 +1,248 @@
+html * {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 22px;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 24px;
+    text-align: center;
+    margin: auto;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0 10px 185px;
+}
+
+.we-are-p {
+    font-size: 22px;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 36px;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    position: relative;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+}
+
+nav ul {
+    list-style-type: none;
+    height: 45px;
+    padding: 10px 185px 10px 0;
+    background: #F6F6F6;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+a {
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    color: #282828;
+}
+
+a:hover {
+    background-color: #FFED00;
+    color: #282828;
+    padding: 5px;
+}
+
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+    color: #282828;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+.h2-strong{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+    color: #282828;
+    position: absolute;
+}
+
+h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 310px;
+    -webkit-text-stroke: 5px #FFED00;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    line-height: 310px;
+}
+
+h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: center;
+    color: #282828;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
+
+#tour {
+    height: 500px;
+    background: #F6F6F6;
+    position: relative;
+}
+
+#we-are {
+    background-image: linear-gradient(#F88846, #F84C54);
+    height: 1000px;
+    padding: 5%;
+    font-size: 22px;
+    font-family: 'Quicksand', sans-serif;
+    list-style-type: none;
+    line-height: 36px;
+    position: relative;
+}
+
+.we-are li {
+    width: 25%;
+    min-width: 150px;
+    height: auto;
+    text-align: center;
+    line-height: 20px;
+    padding: 30px;
+    margin: 5px;
+    display: inline-block;
+}
+
+strong {
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 22px;
+    color: #282828;
+}
+
+.submenu {
+    width: 80px;
+    position: absolute;
+    top: 40px;
+    display: none;
+}
+
+.submenu li {
+    display: block;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #282828;
+    background: #F6F6F6;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+/*
+.transform {
+    transform: translate(100px, 75px);
+    tranform: rotate (45deg);
+    transform: scale (2)
+    transform: skewX (25deg) translate (100px);
+}
+*/
+
+.discos {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.discos li {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin: 25px;
+    position: relative;
+    transition: all ease .2s;
+    /* para redondear:
+    border-radius: 40px;
+    overflow: hidden;*/
+    /*pongo position relative a donde quiero que se posicione la cosa que va en position absolute*/
+}
+
+.discos li img {
+    width: 100%;
+    display: block;
+}
+
+.discos li .album {
+    background: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+    color: #FFED00;
+    position: absolute;
+    top: 0;
+    line-height: 300px;
+    font-size: 24px;
+    font-family: 'News Cycle', sans-serif;
+    font-weight: 700;
+    display: none;
+    transition: all ease .2s;
+}
+
+.discos li:hover {
+    transform: scale(1.1);
+}
+
+.discos li:hover .album {
+    display: block;
+}
+
+@keyframes us-animated {
+    0% {
+        width: 270px;
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+    100% {
+        width: 270px;
+    }
+}
+
+.animation {
+    animation-name: us-animated;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
