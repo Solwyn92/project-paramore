@@ -4,6 +4,7 @@
 <head>
     <title>Paramore - New Album Out Now!</title>
     <meta charset="utf-8">
+    <!--me falta agregar Bebas Neue-->
     <link href="https://fonts.googleapis.com/css?family=News+Cycle:400,700|Quicksand:400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -11,65 +12,74 @@
 </head>
 
 <body>
+    <nav>
+        <a class="logo" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="36" viewBox="289.1 402.9 17 36">
+                <path
+                    d="M302 404.1v28l-2.2-1.2v-26.1l-4.2 1.2v29.3l7.3-2.1v-28.4l2.4-0.7v30.4l-11.9 3.5v-31.2l-4.2 1.1v29l3.7 2 13.3-4v-32L302 404.1zM296.4 406.7l2.4-0.7v24.8l-2.4 0.7V406.7zM296.4 432.5l2.8-0.8 2.1 1.2 -5 1.4V432.5zM292.4 437.7l-2.4-1.4v-27.8l2.4-0.6V437.7z" />
+            </svg>
+        </a>
+
+        <ul>
+            <li><a href="#">Tour</a></li>
+            <li><a href="#">We are</a></li>
+            <li><a href="#">Music</a>
+                <ul class="submenu">
+                    <li>After Laughter</li>
+                    <li>Paramore</li>
+                    <li>Brand New Eyes</li>
+                    <li>The Final Riot!</li>
+                    <li>Riot!</li>
+                    <li>AWKIF</li>
+                </ul>
+            </li>
+            <li><a href="#">Hello</a></li>
+        </ul>
+        <!--<ul>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-spotify"></i></i></a></li>
+                </ul>-->
+    </nav>
+
     <header>
-        <nav>
-            <div class="logo">
-                <a href="#"><img src="img/logo-paramore.svg" alt="Logo Paramore" height="40" /></a>
-            </div>
-            <ul>
-                <li><a href="#">Tour</a></li>
-                <li><a href="#">We are</a></li>
-                <li><a href="#">Music</a>
-                    <ul class="submenu">
-                        <li>All We Know is Falling</li>
-                        <li>Riot!</li>
-                        <li>The Final Riot!</li>
-                        <li>Brand New Eyes</li>
-                        <li>Paramore</li>
-                        <li>After Laughter</li>
-                    </ul>
-                </li>
-                <li><a href="#">Hello</a></li>
-            </ul>
-            <!--<ul>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                <li><a href="#"><i class="fab fa-spotify"></i></i></a></li>
-            </ul>-->
-        </nav>
         <h1>
             <img src="img/header-paramore.png" alt="Paramore" width="100%" />
         </h1>
 
         <h2>New album</br>
-            <span class="h2-strong">AfterLaughter</span></br>
+            <strong>After Laughter</strong></br>
             available now.
         </h2>
-
+        <div class="listen-button">Listen!</div>
     </header>
 
     <section id="tour">
         <h3>Tour</h3>
+
     </section>
 
     <section id="we-are">
         <h3>We are</h3>
         <h4>Energetic. Emotional. Fun.</h4>
-        <p class="we-are-p">Paramore is at least <a href="#">@yelyahwilliams</a> <a href="#">@tayloryorkyall</a> <a
-                href="#">@zacfarro</a> </br>
+        <p>Paramore is at least <a href="#" target="blank">@yelyahwilliams</a> <a href="#"
+                target="blank">@tayloryorkyall</a> <a href="#" target="blank">@zacfarro</a></br>
             an alternative rock band from Franklin, Tennessee, since 2004.</br>
             It all started with a young group of friends passionate about music.</br>
             The name come from Paramour that means “secret lover”.</br>
             Paramore is energetic, emotional & fun.</br>
             <strong>We. Are. Paramore</strong></p>
         <ul class="we-are">
-            <li><img class="animation" src="img/zac.png" alt="Zac Farro" /><strong>Zac Farro</strong></br>Drums</br>(2004 -
-                present)</li>
-            <li><img class="animation" src="img/hayley.png" alt="Hayley Williams"/><strong>Hayley Williams</strong></br>Lead
-                singer & Composer</br>(2004 - present)</li>
-            <li><img class="animation" src="img/taylor.png" alt="Taylor York"/><strong>Taylor
-                    York</strong></br>Drums</br>(2007 - present)</li>
+            <li><img class="animation" src="img/zac.png" alt="Zac Farro" />
+                <h5>Zac Farro</h5></br><strong>Guitar</strong></br>(2004 - present)
+            </li>
+            <li><img class="animation" src="img/hayley.png" alt="Hayley Williams" />
+                <h5>Hayley Williams</h5></br><strong>Lead singer & Composer</strong></br>(2004 - present)
+            </li>
+            <li><img class="animation" src="img/taylor.png" alt="Taylor York" />
+                <h5>Taylor York</h5></br><strong>Drums</strong></br>(2007 - present)
+            </li>
         </ul>
     </section>
 
@@ -79,39 +89,44 @@
             <ul class="discos">
                 <li>
                     <img src="img/albums/01-all-we-know-is-falling.jpg" alt="All We Know is Falling" />
-                    <div class="album">All We Know is Falling - 2005</div>
+                    <div class="album">All We Know is Falling<div class="year">2005</div></div>
                 </li>
 
                 <li>
                     <img src="img/albums/02-riot.jpg" alt="Riot!" />
-                    <div class="album">Riot! - 2007</div>
+                    <div class="album">Riot!<div class="year">2007</div></div>
                 </li>
 
 
                 <li>
                     <img src="img/albums/03-the-final-riot.jpg" alt="The Final Riot!" />
-                    <div class="album">The Final Riot! - 2008</div>
+                    <div class="album">The Final Riot!<div class="year">2008</div></div>
                 </li>
 
                 <li>
                     <img src="img/albums/04-brand-new-eyes.jpg" alt="Brand New Eyes" />
-                    <div class="album">Brand New Eyes - 2009</div>
+                    <div class="album">Brand New Eyes<div class="year">2009</div></div>
                 </li>
 
                 <li>
                     <img src="img/albums/05-paramore.jpg" alt="Paramore" />
-                    <div class="album">Paramore - 2013</div>
+                    <div class="album">Paramore<div class="year">2013</div></div>
                 </li>
 
                 <li>
                     <img src="img/albums/06-after-laughter.jpg" alt="After Laughter" />
-                    <div class="album">After Laughter - 2017</div>
+                    <div class="album">After Laughter<div class="year">2017</div></div>
                 </li>
             </ul>
-            <!--<iframe
+            <div class="video">
+                <iframe width="1044" height="575" src="https://www.youtube.com/embed/AEB6ibtdPZc" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <!--<iframe
             src="https://open.spotify.com/follow/1/?uri=spotify:artist:74XFHRwlV6OrjEM0A2NCMF&size=basic&theme=light&show-count=0"
             width="200" height="25" scrolling="no" frameborder="0" style="border:none; overflow:hidden;"
             allowtransparency="true"></iframe>-->
+            </div>
         </div>
     </section>
 
@@ -120,7 +135,8 @@
     </section>
 
     <footer>
-        <p>© 2019 FUELED BY RAMEN</p>
+        <div class="footer-left">© 2019 Fueled by Ramen</div>
+        <div class="footer-right">Designed by Soledad Labrador</div>
     </footer>
 
 </body>

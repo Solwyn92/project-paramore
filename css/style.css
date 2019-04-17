@@ -3,115 +3,152 @@ html * {
     padding: 0;
 }
 
-p {
-    font-size: 22px;
-    font-family: 'Quicksand', sans-serif;
-    line-height: 24px;
-    text-align: center;
-    margin: auto;
-}
-
-.logo {
-    float: left;
-    padding: 10px 0 10px 185px;
-}
-
-.we-are-p {
-    font-size: 22px;
-    font-family: 'Quicksand', sans-serif;
-    line-height: 36px;
-    text-align: center;
-    width: 75%;
-    margin: auto;
-}
-
-header {
-    width: 100%;
-    position: relative;
-}
-
 nav {
     position: sticky;
     top: 0;
     z-index: 999999;
 }
 
+.logo {
+    float: left;
+    padding: 12px 0 0px 150px;
+}
+
+.logo:hover {
+    fill: #F84C54;
+}
+
 nav ul {
     list-style-type: none;
-    height: 45px;
-    padding: 10px 185px 10px 0;
+    padding: 0px 150px 0px 0px;
+    height: 60px;
     background: #F6F6F6;
     text-align: right;
 }
 
 nav ul li {
     display: inline-block;
-    width: 80px;
-    height: 40px;
+    width: 70px;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 26px;
     text-align: center;
-    line-height: 40px;
     text-transform: uppercase;
     position: relative;
 }
 
+nav ul li a:hover {
+    color: #F6F6F6;
+    background-color: #F84C54;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.submenu {
+    width: 100%;
+    top: 60px;
+    display: none;
+    position: absolute;
+    padding: 0;
+}
+
+.submenu li {
+    display: block;
+    width: 70px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    background: #F6F6F6;
+    margin: 0;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
 a {
     font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
     text-decoration: none;
-    font-weight: 700;
     color: #282828;
 }
 
-a:hover {
-    background-color: #FFED00;
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    margin: auto;
     color: #282828;
-    padding: 5px;
+}
+
+h1 {
+    height: 560px;
 }
 
 h2 {
     font-family: 'Quicksand', sans-serif;
-    font-size: 44px;
+    font-size: 38px;
     font-weight: 400;
-    line-height: 48px;
+    line-height: 44px;
     text-align: left;
     color: #282828;
     position: absolute;
-    top: 50%;
-    left: 10%;
+    top: 350px;
+    left: 150px;
 }
 
-.h2-strong{
+.listen-button {
     font-family: 'Quicksand', sans-serif;
-    font-size: 44px;
-    font-weight: 700;
-    line-height: 48px;
-    text-align: left;
-    color: #282828;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    background-color: #F84C54;
+    color: #ffffff;
+    padding: 8px 20px 8px 20px;
+    border-radius: 2px;
     position: absolute;
+    top: 500px;
+    left: 300px;
 }
 
 h3 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 310px;
+    font-size: 260px;
+    letter-spacing: 50px;
     -webkit-text-stroke: 5px #FFED00;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    line-height: 310px;
 }
 
 h4 {
     font-family: 'Quicksand', sans-serif;
-    font-size: 40px;
+    font-size: 34px;
     font-weight: 400;
-    line-height: 48px;
     text-align: center;
     color: #282828;
     position: absolute;
-    top: 20%;
-    left: 35%;
+    top: 160px;
+    left: 470px;
+}
+
+h5 {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFED00;
 }
 
 #tour {
-    height: 500px;
+    height: 670px;
     background: #F6F6F6;
     position: relative;
 }
@@ -119,11 +156,12 @@ h4 {
 #we-are {
     background-image: linear-gradient(#F88846, #F84C54);
     height: 1000px;
-    padding: 5%;
-    font-size: 22px;
     font-family: 'Quicksand', sans-serif;
-    list-style-type: none;
-    line-height: 36px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin: auto;
+    color: #282828;
     position: relative;
 }
 
@@ -136,97 +174,6 @@ h4 {
     padding: 30px;
     margin: 5px;
     display: inline-block;
-}
-
-strong {
-    display: block;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 22px;
-    color: #282828;
-}
-
-.submenu {
-    width: 80px;
-    position: absolute;
-    top: 40px;
-    display: none;
-}
-
-.submenu li {
-    display: block;
-    width: 80px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    text-transform: uppercase;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 10px;
-    text-decoration: none;
-    font-weight: 700;
-    color: #282828;
-    background: #F6F6F6;
-}
-
-nav ul li:hover .submenu {
-    display: block;
-}
-
-/*
-.transform {
-    transform: translate(100px, 75px);
-    tranform: rotate (45deg);
-    transform: scale (2)
-    transform: skewX (25deg) translate (100px);
-}
-*/
-
-.discos {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    text-align: center;
-}
-
-.discos li {
-    width: 300px;
-    height: 300px;
-    display: inline-block;
-    margin: 25px;
-    position: relative;
-    transition: all ease .2s;
-    /* para redondear:
-    border-radius: 40px;
-    overflow: hidden;*/
-    /*pongo position relative a donde quiero que se posicione la cosa que va en position absolute*/
-}
-
-.discos li img {
-    width: 100%;
-    display: block;
-}
-
-.discos li .album {
-    background: rgba(0, 0, 0, 0.75);
-    width: 100%;
-    height: 100%;
-    color: #FFED00;
-    position: absolute;
-    top: 0;
-    line-height: 300px;
-    font-size: 24px;
-    font-family: 'News Cycle', sans-serif;
-    font-weight: 700;
-    display: none;
-    transition: all ease .2s;
-}
-
-.discos li:hover {
-    transform: scale(1.1);
-}
-
-.discos li:hover .album {
-    display: block;
 }
 
 @keyframes us-animated {
@@ -246,3 +193,121 @@ nav ul li:hover .submenu {
     animation-duration: 1s;
     animation-iteration-count: infinite;
 }
+
+#music {
+    height: 1900px;
+    background: #F6F6F6;
+    font-family: 'News Cycle', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    color: #FFED00;
+    position: relative;
+}
+
+.discos {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.discos li {
+    width: 270px;
+    height: 270px;
+    display: inline-block;
+    margin: 55px;
+    position: relative;
+    transition: all ease .2s;
+    /* para redondear:
+    border-radius: 40px;
+    overflow: hidden;*/
+    /*pongo position relative a donde quiero que se posicione la cosa que va en position absolute*/
+}
+
+.discos li img {
+    width: 100%;
+    display: block;
+}
+
+.discos li .album {
+    background: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+    /*color: #FFED00;*/
+    position: absolute;
+    top: 0;
+    /*line-height: 270px;
+    font-size: 24px;
+    font-family: 'News Cycle', sans-serif;
+    font-weight: 700;*/
+    display: none;
+    transition: all ease .2s;
+}
+
+.year {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    margin: auto;
+    color: #FFED00;
+}
+
+.discos li:hover {
+    transform: scale(1.1);
+}
+
+.discos li:hover .album {
+    display: block;
+}
+
+.video {
+    text-align: center;
+    margin-top: 70px;
+}
+
+#hello {
+    background-image: linear-gradient(#8C7BA5, #F84C54);
+    height: 1600px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin: auto;
+    color: #ffffff;
+    position: relative;
+}
+
+footer {
+    height: 60px;
+    background: #F6F6F6;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #282828;
+    position: relative;
+}
+
+.footer-left {
+    float: left;
+    padding: 12px 0 0px 150px;
+}
+
+.footer-right {
+    padding: 12px 150px 0px 0px;
+    text-align: right;
+}
+
+/*
+.transform {
+    transform: translate(100px, 75px);
+    tranform: rotate (45deg);
+    transform: scale (2)
+    transform: skewX (25deg) translate (100px);
+}
+*/
