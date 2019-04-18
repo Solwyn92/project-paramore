@@ -31,18 +31,23 @@ nav ul li {
     width: 70px;
     height: 60px;
     line-height: 60px;
-    margin-left: 26px;
+    margin: 0px 13px 0px 13px;
     text-align: center;
-    text-transform: uppercase;
     position: relative;
 }
 
 nav ul li a:hover {
-    color: #F6F6F6;
-    background-color: #F84C54;
-    width: 70px;
-    height: 30px;
-    line-height: 30px;
+    color: #282828;
+    background-color: #FFED00;
+    padding: 5px;
+}
+
+a {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #282828;
 }
 
 .submenu {
@@ -59,24 +64,13 @@ nav ul li a:hover {
     height: 40px;
     text-align: center;
     line-height: 40px;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 10px;
     text-decoration: none;
-    font-weight: 500;
     background: #F6F6F6;
     margin: 0;
 }
 
 nav ul li:hover .submenu {
     display: block;
-}
-
-a {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    text-decoration: none;
-    color: #282828;
 }
 
 p {
@@ -109,14 +103,20 @@ h2 {
     font-family: 'Quicksand', sans-serif;
     font-size: 24px;
     font-weight: 400;
+    letter-spacing: 2px;
     text-align: center;
     background-color: #F84C54;
     color: #ffffff;
-    padding: 8px 20px 8px 20px;
-    border-radius: 2px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 3px;
     position: absolute;
     top: 500px;
-    left: 300px;
+    left: 320px;
+}
+
+.listen-button:hover {
+    background-color: #FFED00;
+    color: #282828;
 }
 
 h3 {
