@@ -22,7 +22,7 @@ nav ul {
     list-style-type: none;
     padding: 0px 150px 0px 0px;
     height: 60px;
-    background: #F6F6F6;
+    background: rgb(241, 241, 241);
     text-align: right;
 }
 
@@ -107,8 +107,10 @@ h2 {
     text-align: center;
     background-color: #F84C54;
     color: #ffffff;
+    width: 110px;
     padding: 5px 10px 5px 10px;
-    border-radius: 3px;
+    border-radius: 5px;
+    padding: 5px;
     position: absolute;
     top: 500px;
     left: 320px;
@@ -148,9 +150,127 @@ h5 {
 }
 
 #tour {
-    height: 670px;
+    max-height: 1300px;
     background: #F6F6F6;
     position: relative;
+}
+
+.container-tour {
+    padding: 0 10% 0 10%;
+    min-height: 350px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.block-tour {
+    width: 270px;
+    height: 150px;
+    margin: 5% 0 5% 0;
+}
+
+.block-date {
+    height: 150px;
+    width: 30%;
+    float: left;
+    font-family: 'News Cycle', sans-serif;
+    font-weight: 700;
+    color: #282828;
+}
+
+.day {
+    height: 50%;
+    font-size: 80px;
+    line-height: 60px;
+    text-align: left;
+}
+
+.month-year {
+    height: 50%;
+    font-size: 36px;
+    line-height: 38px;
+    text-align: left;
+}
+
+.block-location {
+    height: 75%;
+    width: 65%;
+    float: right;
+    font-family: 'News Cycle', sans-serif;
+}
+
+.city {
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #282828;
+}
+
+.stadium {
+    font-size: 24px;
+    line-height: 45px;
+    font-weight: 400;
+    color: #282828;
+}
+
+.block-tickets {
+    height: 25%;
+    width: 68%;
+    float: right;
+}
+
+.tickets-button {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #F84C54;
+    width: 100px;
+    border-radius: 5px;
+    border: 3px solid #F84C54;
+    padding: 5px;
+    float: right;
+}
+
+.tickets-button:hover {
+    color: #F6F6F6;
+    width: 100px;
+    border-radius: 5px;
+    border: 3px solid #F84C54;
+    background: #F84C54;
+}
+
+.soldout-button {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #9D9D9C;
+    width: 100px;
+    border-radius: 5px;
+    border: 3px solid #9D9D9C;
+    padding: 5px;
+    float: right;
+}
+
+.soldout-button:hover {
+    color: #F6F6F6;
+    width: 100px;
+    border-radius: 5px;
+    border: 3px solid #9D9D9C;
+    background: #9D9D9C;
+}
+
+.see-more {
+    padding: 2% 10% 5% 10%;
+    text-align: center;
+}
+
+.see-more a {
+    color: #F84C54;
+    font-weight: 700;
 }
 
 #we-are {
